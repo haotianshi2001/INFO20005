@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../pcStyle/shopping.css">
+  <title>Fantastic Furniture</title>
+  <script>
+    function routeBasedOnWindowSize() {
+      if (window.outerWidth <= 768) { 
+        window.history.pushState(null, null, '/mobile/shoppingcart.html'); 
+        window.location.href = '/mobile/shoppingcart.html';
+      }
+    }
+    window.addEventListener('resize', routeBasedOnWindowSize);
+    routeBasedOnWindowSize(); 
+  </script>
+</head>
+
+<body>
+  <div class="app">
+    <div class="app-title">Fantastic Furniture</div>
+    <div class="header">
+      <div class="logo">
+        <img src="../images/logo.jpg">
+      </div>
+      <div class="search">
+        <img src="../images/search.png">
+        <span>What are you looking for ?</span>
+        <img src="../images/xiangji.png">
+      </div>
+      <div class="icon">
+        <img src="../images/center.png">
+        <span>Log in or Join us</span>
+      </div>
+    </div>
+    <div class="wl-shop">
+      <div class="item">
+        <img src="../images/wl.png">
+        <span>1250</span>
+      </div>
+      <div class="item shopping">
+        <img src="../images/shoppingCart.png">
+        <span>1250</span>
+      </div>
+    </div>
+    <div class="nav">
+      <span class="home">Home</span>
+      <img src="../images/arrow_right.png">
+      <span>Shopping Bag</span>
+    </div>
+    <div class="addr">
+      <img src="../images/addr.png">
+      <span>Your postcode 3051</span>
+    </div>
+    <div class="wrap">
+      <div class="left">
+        <div class="but">
+          <div class="item active">Delivery</div>
+          <div class="item">Pick up</div>
+        </div>
+        <div class="list">
+          <img src="../images/paymentChair1.png">
+          <div class="list-cont">
+            <div class="price">
+              <span>Available</span>
+              <span>$350</span>
+            </div>
+            <div class="name">Simple Single Chair</div>
+            <div class="color">Brown</div>
+            <div class="number">
+              <div class="number-figure">
+                <span>-</span> 2 <span>+</span>
+              </div>
+              <div class="number-delete">Delete</div>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <img src="../images/paymentchair2.png">
+          <div class="list-cont">
+            <div class="price">
+              <span>Available</span>
+              <span>$350</span>
+            </div>
+            <div class="name">Simple Single Chair</div>
+            <div class="color">Brown</div>
+            <div class="number">
+              <div class="number-figure">
+                <span>-</span> 2 <span>+</span>
+              </div>
+              <div class="number-delete">Delete</div>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <img src="../images/whiteChair.png">
+          <div class="list-cont">
+            <div class="price">
+              <span>Available</span>
+              <span>$350</span>
+            </div>
+            <div class="name">Simple Single Chair</div>
+            <div class="color">Brown</div>
+            <div class="number">
+              <div class="number-figure">
+                <span>-</span> 2 <span>+</span>
+              </div>
+              <div class="number-delete">Delete</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="list">
+          <span>Order Summary</span>
+          <span>Delivery</span>
+        </div>
+        <div class="sub">
+          <div class="item" style="color: #333; font-size: 20px; height: 50px;">
+            <span>Subtotal</span>
+            <span>$450</span>
+          </div>
+          <div class="item">
+            <span>Subtotal excl. GST</span>
+            <span>$400</span>
+          </div>
+          <div class="item">
+            <span>GST</span>
+            <span>$50</span>
+          </div>
+          <div class="item">
+            <span>Delivery</span>
+            <span>$0</span>
+          </div>
+        </div>
+        <div class="checkout">
+          <span>Check out</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+  $('.logo, .home').click(function () {
+    window.location.href = "./index.html"
+  })
+
+  $('.shopping').click(function () {
+    window.location.href = "./shopping.html"
+  })
+
+  $('.checkout').click(function () {
+    window.location.href = "./payment.html"
+  })
+})
+  </script>
+</body>
+
+</html>

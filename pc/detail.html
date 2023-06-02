@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../pcStyle/detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/css/swiper.css" integrity="sha512-cms+uo/GbqkIElAPhbElBx1vb9mqIsGDQ70opSqtAMopjYZhZuRIvh0fgiJp/hhPlvnMuwUS1wZz5diM35KdNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Fantastic Furniture</title>
+  <script>
+    function routeBasedOnWindowSize() {
+      if (window.outerWidth <= 768) { 
+        window.history.pushState(null, null, '/mobile/detail.html'); 
+        window.location.href = '/mobile/detail.html';
+      }
+    }
+    window.addEventListener('resize', routeBasedOnWindowSize);
+    routeBasedOnWindowSize(); 
+
+  </script>
+</head>
+
+<body>
+  <div class="app">
+    <div class="app-title">Fantastic Furniture</div>
+    <div class="header">
+      <div class="logo">
+        <img src="../images/logo.jpg">
+      </div>
+      <div class="search">
+        <img src="../images/search.png">
+        <span>What are you looking for ?</span>
+        <img src="../images/xiangji.png">
+      </div>
+      <div class="icon">
+        <img src="../images/center.png">
+        <span>Log in or Join us</span>
+      </div>
+    </div>
+    <div class="wl-shop">
+      <div class="item">
+        <img src="../images/wl.png">
+        <span>1250</span>
+      </div>
+      <div class="item shopping">
+        <img src="../images/shoppingCart.png">
+        <span>1250</span>
+      </div>
+    </div>
+    <div class="nav">
+      <span class="home">Home</span>
+      <img src="../images/arrow_right.png">
+      <span>Chair</span>
+    </div>
+    <div class="wrap">
+      <div class="left">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/whiteChair.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/whiteChair2.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/WhiteChair3.png">
+            </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="more">Show more</div>
+        <div class="list">
+          <span>Product details</span>
+          <img src="../images/arrow_right.png">
+        </div>
+        <div class="list">
+          <span>Reviews</span>
+          <img src="../images/arrow_right.png">
+        </div>
+        <div class="list">
+          <span>Payment Options</span>
+          <img src="../images/arrow_right.png">
+        </div>
+      </div>
+      <div class="right">
+        <div class="title">Simple Single Chair</div>
+        <div class="price">
+          <span>$500</span>
+          <img src="../images/love.png">
+        </div>
+        <div class="star">
+          <img src="../images/star.png">
+          <img src="../images/star.png">
+          <img src="../images/star.png">
+          <img src="../images/star_1.png">
+          <img src="../images/star_1.png">
+          <span>(15)</span>
+        </div>
+        <div class="color">
+          Choose Colour <span>Brown</span>
+        </div>
+        <div class="but">
+          <span>Add to Cart</span>
+          <img src="../images/shoppingCart.png">
+        </div>
+        <div class="item">
+          <img src="../images/wl.png">
+          <span>Delivery to 3500</span>
+          <img src="../images/arrow_right.png">
+        </div>
+        <div class="item pickup">
+          <img src="../images/addr.png">
+          <span>Pick up in shop</span>
+          <img src="../images/arrow_right.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.js" integrity="sha512-ioisQmUz66ecL7Fo16w9fqCifC2XJpAhtwqro1Ob5eLxF2z+YQElaHMmos5AwRnWaH9vTTwCWfh5IlvjxNB37w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      })
+      $('.logo, .home').click(function () {
+        window.location.href = "./index.html"
+      })
+
+      $('.shopping, .but, .pickup').click(function () {
+        window.location.href = "./shopping.html"
+      })
+    })
+  </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-title {
+  color: #333;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 94%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  width: 90px;
+  height: 90px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0 20px;
+  padding: 0 20px;
+  border-radius: 25px;
+  background: #f3f5f7;
+}
+
+.header .search span {
+  flex: 1;
+  color: #666;
+  font-size: 14px;
+  padding: 0 0 0 20px;
+}
+
+.header .search img {
+  width: 24px;
+  height: 24px;
+}
+
+.header .icon {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.header .icon img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 0;
+}
+
+.wl-shop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 94%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.wl-shop .item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+  margin: 0 0 0 20px;
+}
+
+.wl-shop .item span {
+  margin: 0 0 0 10px;
+}
+
+.wl-shop .item img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.nav img {
+  width: 14px;
+  height: 14px;
+  margin: 0 20px;
+}
+
+.addr {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.addr img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.wrap .left {
+  flex: 3;
+  margin: 0 50px 0 0;
+}
+
+.wrap .left .but {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap .left .but .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  width: 250px;
+  height: 60px;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.wrap .left .but .item.active {
+  background: #aaa;
+}
+
+.left .list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 20px;
+  margin: 30px 0 0 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.left .list img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.list .list-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  margin: 0 0 0 10px;
+}
+
+.list-cont .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-size: 14px;
+  width: 100%;
+}
+
+.list-cont .price span:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list-cont .number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-cont .number .number-figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666;
+  font-size: 16px;
+  width: 150px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.list-cont .number .number-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  width: 90px;
+  height: 36px;
+  border-radius: 18px;
+  border: 1px solid red;
+}
+
+.wrap .right {
+  flex: 2;
+}
+.right .list {
+  display: flex;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .list span:nth-child(1),
+.wrap .sub span:nth-child(1) {
+  flex: 3;
+}
+.wrap .list span:nth-child(2),
+.wrap .sub span:nth-child(2) {
+  flex: 1;
+}
+.right .sub {
+  width: 100%;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #ccc;
+}
+.sub .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  height: 20px;
+}
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  margin: 50px auto;
+  border-radius: 8px;
+  background: green;
+}

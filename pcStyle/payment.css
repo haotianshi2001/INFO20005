@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-title {
+  color: #333;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 94%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  width: 90px;
+  height: 90px;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0 20px;
+  padding: 0 20px;
+  border-radius: 25px;
+  background: #f3f5f7;
+}
+
+.header .search input {
+  flex: 1;
+  color: #666;
+  font-size: 14px;
+  height: 100%;
+  padding: 0 0 0 20px;
+  background: none;
+}
+
+.header .search img {
+  width: 24px;
+  height: 24px;
+}
+
+.header .icon {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.header .icon img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 0;
+}
+
+.wl-shop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 94%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.wl-shop .item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 12px;
+  margin: 0 0 0 20px;
+}
+
+.wl-shop .item span {
+  margin: 0 0 0 10px;
+}
+
+.wl-shop .item img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.nav img {
+  width: 14px;
+  height: 14px;
+  margin: 0 20px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  width: 1100px;
+  margin: 30px auto;
+}
+
+.content .left {
+  flex: 2;
+  padding: 0 30px 0 0;
+  border-right: 1px solid #ccc;
+}
+
+.left .wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrap .item {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  font-size: 14px;
+  margin: 0 20px 0 0;
+}
+
+.wrap .item img {
+  width: 120px;
+  height: 120px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+}
+
+.wrap .item span {
+  margin: 5px 0;
+}
+
+.left .credit {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 20px;
+}
+
+.left .credit span {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.left .credit img {
+  width: 24px;
+  height: 24px;
+}
+
+.left .credit .box {
+  width: 18px;
+  height: 18px;
+  margin: 0 50px 0 0;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.left input {
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px;
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.left .but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 120px;
+  height: 36px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: green;
+}
+
+.content .right {
+  flex: 1;
+  padding: 0 0 0 30px;
+}
+
+.right .name {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+}
+
+.right .name img {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 10px;
+}
+
+.right .addr,
+.right .city {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 30px 0;
+}
+
+.right .city {
+  padding: 0 0 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.right .list {
+  display: flex;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list span:nth-child(1),
+.sub span:nth-child(1) {
+  flex: 3;
+}
+
+.list span:nth-child(2),
+.sub span:nth-child(2) {
+  flex: 1;
+}
+
+.right .sub {
+  width: 100%;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sub .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 12px;
+  /* font-weight: bold; */
+  width: 100%;
+  height: 20px;
+}
