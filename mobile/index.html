@@ -9,16 +9,7 @@
   <title>Fantastic</title>
   <link rel="stylesheet" href="../mobileStyle/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/css/swiper.css" integrity="sha512-cms+uo/GbqkIElAPhbElBx1vb9mqIsGDQ70opSqtAMopjYZhZuRIvh0fgiJp/hhPlvnMuwUS1wZz5diM35KdNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script>
-    function routeBasedOnWindowSize() {
-      if (window.outerWidth >= 768) { 
-        window.history.pushState(null, null, '/pc/index.html'); 
-        window.location.href = '/pc/index.html';
-      }
-    }
-    window.addEventListener('resize', routeBasedOnWindowSize);
-    routeBasedOnWindowSize(); 
-  </script>
+  <script src = "../mobileJS/index.js"></script>
 </head>
 
 <body>
@@ -61,29 +52,6 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.js" integrity="sha512-ioisQmUz66ecL7Fo16w9fqCifC2XJpAhtwqro1Ob5eLxF2z+YQElaHMmos5AwRnWaH9vTTwCWfh5IlvjxNB37w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $(document).ready(function () {
-      var mySwiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination'
-        }
-      })
-      $('.submit').click(function() {
-        window.location.href = "./more.html"
-      })
-      $('.swiper').click(function() {
-        window.location.href = "./detail.html"
-      })
-      $('.shoppingcart').click(function() {
-        window.location.href = "./shoppingcart.html"
-      })
-      $('#search').click(function() {
-        window.location.href = "./search.html"
-      })
-    })
-  </script>
 </body>
 
 </html>

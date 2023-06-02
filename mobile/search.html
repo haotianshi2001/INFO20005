@@ -8,16 +8,7 @@
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
   <title>Fantastic</title>
   <link rel="stylesheet" href="../mobileStyle/search.css">
-  <script>
-    function routeBasedOnWindowSize() {
-      if (window.outerWidth >= 768) { 
-        window.history.pushState(null, null, '/pc/search.html'); 
-        window.location.href = '/pc/search.html';
-      }
-    }
-    window.addEventListener('resize', routeBasedOnWindowSize);
-    routeBasedOnWindowSize(); 
-  </script>
+  <script src = "../mobileJS/search.js"></script>
 </head>
 
 <body>
@@ -197,25 +188,6 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $(document).ready(function () {
-      $('.logo').click(function() {
-        window.location.href = "./index.html"
-      })
-      $('.icon-shop').click(function() {
-        window.location.href = "./shoppingcart.html"
-      })
-      $('.wrap .item .img_photo').click(function() {
-        window.location.href = "./detail.html"
-      })
-      $('.arrow-left').click(function() {
-        window.history.go(-1)
-      })
-      $('.shoppingcart').click(function() {
-        window.location.href = "./shoppingcart.html"
-      })
-    })
-  </script>
 </body>
 
 </html>
